@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReviveWorks — Stories Deserve to Live On</title>
+  <meta name="description" content="ReviveWorks is a creative collective bringing beloved stories back to life through animation, technology, and fan-driven passion." />
+  <link rel="icon" type="image/jpeg" href="assets/ReviveWorks.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated starfield backdrop -->
+  <div class="starfield" aria-hidden="true">
+    <div class="stars stars--1"></div>
+    <div class="stars stars--2"></div>
+    <div class="stars stars--3"></div>
+    <div class="glow glow--1"></div>
+    <div class="glow glow--2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="nav__brand" data-link>
+      <img src="assets/ReviveWorks.jpg" alt="ReviveWorks logo" class="nav__logo" />
+      <span class="nav__name">ReviveWorks</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" class="nav__link is-active" data-link>Home</a>
+      <a href="#about" class="nav__link" data-link>About</a>
+      <a href="#projects" class="nav__link" data-link>Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="view is-active" data-view>
+      <div class="hero">
+        <div class="hero__media">
+          <img src="assets/banner.jpg" alt="A lone hero gazing into a starlit portal" class="hero__img" />
+          <div class="hero__veil"></div>
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">AI-Powered Animation Studio</p>
+          <h1 class="hero__title">ReviveWorks</h1>
+          <p class="hero__tagline">Stories Deserve to Live On.</p>
+          <p class="hero__lede">
+            A creative collective bringing beloved stories back to life through
+            animation, technology, and fan-driven passion.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary" data-link>Explore Projects</a>
+            <a href="#about" class="btn btn--ghost" data-link>Who We Are</a>
+          </div>
+        </div>
+        <a href="#about" class="hero__scroll" data-link aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="view" data-view>
+      <div class="section">
+        <header class="section__head">
+          <p class="section__kicker">Who We Are</p>
+          <h2 class="section__title">A collective with a heartbeat</h2>
+        </header>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              <strong>ReviveWorks</strong> is a creative collective dedicated to bringing
+              beloved stories back to life through animation, technology, and fan-driven
+              passion. We are a team of artists, storytellers, and AI creators who believe
+              that some worlds deserve to be remembered, reimagined, and shared with new
+              generations.
+            </p>
+            <p class="about__mission">
+              Our mission is to create heartfelt, non-profit tributes that honor the spirit
+              of the stories that shaped us.
+            </p>
+          </div>
+          <div class="about__cards">
+            <article class="value">
+              <div class="value__icon">✦</div>
+              <h3>Artistry</h3>
+              <p>Hand-guided craft fused with modern tooling to honor every frame.</p>
+            </article>
+            <article class="value">
+              <div class="value__icon">◈</div>
+              <h3>Technology</h3>
+              <p>AI-assisted pipelines that let small teams achieve epic scope.</p>
+            </article>
+            <article class="value">
+              <div class="value__icon">♡</div>
+              <h3>Passion</h3>
+              <p>Non-profit tributes made by fans, for fans, with deep respect.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="view" data-view>
+      <div class="section">
+        <header class="section__head">
+          <p class="section__kicker">Projects</p>
+          <h2 class="section__title">Worlds we're reviving</h2>
+        </header>
+        <div class="projects">
+          <article class="project">
+            <div class="project__art">
+              <img src="assets/GoldenSun.png" alt="Golden Sun: Revived — A non-profit tribute by ReviveWorks" />
+              <span class="project__badge">In Production</span>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Golden Sun: Revived</h3>
+              <p class="project__meta">Animated Series · Fan Tribute</p>
+              <p class="project__desc">
+                A heartfelt reimagining of a cherished adventure — restoring the magic of
+                Weyard for a new generation of dreamers. Crafted with reverence for the
+                original spirit, powered by collaborative AI animation.
+              </p>
+              <div class="project__tags">
+                <span>Animation</span>
+                <span>Adventure</span>
+                <span>Non-Profit</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--soon" aria-hidden="true">
+            <div class="project__art project__art--empty">
+              <span class="project__soon">More worlds awakening soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <img src="assets/ReviveWorks.jpg" alt="" class="footer__logo" />
+      <div>
+        <p class="footer__name">ReviveWorks</p>
+        <p class="footer__tag">Stories Deserve to Live On.</p>
+      </div>
+      <p class="footer__note">A non-profit fan tribute collective. Made with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
