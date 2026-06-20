@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ReviveWorks — Stories Deserve to Live On</title>
-  <meta name="description" content="ReviveWorks is a creative collective bringing beloved stories back to life through animation, technology, and fan-driven passion." />
+  <meta name="description" content="ReviveWorks is an animation studio reviving beloved stories and creating original worlds — through craft, technology, and passion." />
   <link rel="icon" type="image/jpeg" href="assets/ReviveWorks.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,7 @@
       <div class="hero">
         <div class="hero__media" data-hero-media>
           <video
-            class="hero__video"
+            class="hero__video hero__video--desktop"
             autoplay
             muted
             loop
@@ -50,6 +50,18 @@
             aria-hidden="true"
           >
             <source src="assets/animated-loop.mp4" type="video/mp4" />
+          </video>
+          <video
+            class="hero__video hero__video--mobile"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/banner.jpg"
+            aria-hidden="true"
+          >
+            <source src="assets/animated-loop-mobile.mp4" type="video/mp4" />
           </video>
           <img
             src="assets/banner.jpg"
@@ -64,8 +76,8 @@
           <h1 class="hero__title">ReviveWorks</h1>
           <p class="hero__tagline">Stories Deserve to Live On.</p>
           <p class="hero__lede">
-            A creative collective bringing beloved stories back to life through
-            animation, technology, and fan-driven passion.
+            An animation studio reviving cherished worlds and forging new ones —
+            through craft, technology, and stories worth telling.
           </p>
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary" data-link>Explore Projects</a>
@@ -88,15 +100,16 @@
         <div class="about">
           <div class="about__text">
             <p>
-              <strong>ReviveWorks</strong> is a creative collective dedicated to bringing
-              beloved stories back to life through animation, technology, and fan-driven
-              passion. We are a team of artists, storytellers, and AI creators who believe
-              that some worlds deserve to be remembered, reimagined, and shared with new
-              generations.
+              <strong>ReviveWorks</strong> is an animation studio with two hearts:
+              honoring the stories that shaped us, and building original worlds of our own.
+              We are artists, storytellers, and AI creators who believe great narratives
+              deserve to live on — whether revived for a new generation or imagined
+              here for the first time.
             </p>
             <p class="about__mission">
-              Our mission is to create heartfelt, non-profit tributes that honor the spirit
-              of the stories that shaped us.
+              Right now, we're focused on heartfelt non-profit tributes — but our vision
+              reaches further. We're growing into a studio that revives, reimagines,
+              and creates.
             </p>
           </div>
           <div class="about__cards">
@@ -112,8 +125,8 @@
             </article>
             <article class="value">
               <div class="value__icon">♡</div>
-              <h3>Passion</h3>
-              <p>Non-profit tributes made by fans, for fans, with deep respect.</p>
+              <h3>Story</h3>
+              <p>From fan tributes to original worlds — every project driven by love for the craft.</p>
             </article>
           </div>
         </div>
@@ -125,7 +138,7 @@
       <div class="section">
         <header class="section__head">
           <p class="section__kicker">Projects</p>
-          <h2 class="section__title">Worlds we're reviving</h2>
+          <h2 class="section__title">Stories in motion</h2>
         </header>
         <div class="projects">
           <article class="project">
@@ -151,7 +164,7 @@
 
           <article class="project project--soon" aria-hidden="true">
             <div class="project__art project__art--empty">
-              <span class="project__soon">More worlds awakening soon</span>
+              <span class="project__soon">Original worlds on the horizon</span>
             </div>
           </article>
         </div>
@@ -166,7 +179,7 @@
         <p class="footer__name">ReviveWorks</p>
         <p class="footer__tag">Stories Deserve to Live On.</p>
       </div>
-      <p class="footer__note">A non-profit fan tribute collective. Made with passion.</p>
+      <p class="footer__note">An animation studio — reviving classics, creating what's next.</p>
     </div>
   </footer>
 
