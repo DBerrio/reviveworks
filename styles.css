@@ -197,7 +197,8 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.55;
 }
 .hero__fallback { display: none; }
-.hero__video--mobile { display: none; }
+.hero__video--desktop { display: block; z-index: 1; }
+.hero__video--mobile { display: none; z-index: 1; }
 .hero__media--static .hero__video { display: none; }
 .hero__media--static .hero__fallback { display: block; }
 .hero__veil {
