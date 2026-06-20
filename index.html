@@ -38,8 +38,25 @@
     <!-- HOME / HERO -->
     <section id="home" class="view is-active" data-view>
       <div class="hero">
-        <div class="hero__media">
-          <img src="assets/banner.jpg" alt="A lone hero gazing into a starlit portal" class="hero__img" />
+        <div class="hero__media" data-hero-media>
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/banner.jpg"
+            aria-hidden="true"
+          >
+            <source src="assets/landing-animation.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="assets/banner.jpg"
+            alt=""
+            class="hero__fallback"
+            aria-hidden="true"
+          />
           <div class="hero__veil"></div>
         </div>
         <div class="hero__content">

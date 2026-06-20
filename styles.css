@@ -184,18 +184,19 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   z-index: 0;
 }
-.hero__img {
+.hero__video,
+.hero__fallback {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 35%;
   opacity: 0.55;
-  animation: slowzoom 26s ease-in-out infinite alternate;
 }
-@keyframes slowzoom {
-  from { transform: scale(1.02); }
-  to { transform: scale(1.12); }
-}
+.hero__fallback { display: none; }
+.hero__media--static .hero__video { display: none; }
+.hero__media--static .hero__fallback { display: block; }
 .hero__veil {
   position: absolute;
   inset: 0;
@@ -522,4 +523,14 @@ a { color: inherit; text-decoration: none; }
   .about { grid-template-columns: 1fr; }
   .nav__name { display: none; }
   .footer__note { margin-left: 0; width: 100%; }
+
+  .hero__video,
+  .hero__fallback {
+    object-position: center center;
+  }
+  .hero__veil {
+    background:
+      radial-gradient(80% 70% at 50% 45%, transparent 0%, rgba(5,7,15,0.65) 80%),
+      linear-gradient(180deg, rgba(5,7,15,0.55) 0%, rgba(5,7,15,0.35) 45%, var(--bg) 100%);
+  }
 }
